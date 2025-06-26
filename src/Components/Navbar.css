@@ -1,29 +1,131 @@
 /* src/components/Navbar.css */
 .navbar {
-  background-color: #f4f4f4;
-  padding: 10px;
+  background-color: #ffffff;
+  border-bottom: 1.5px solid #d1d1d1;
+  padding: 12px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+  position: relative;
+  z-index: 100;
 }
 
+/* rest of the CSS from above */
+
+
+/* Desktop Menu */
 .navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
   margin: 0;
   padding: 0;
+  gap: 40px;
 }
 
 .navbar li {
-  display: inline;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
 }
 
-.navbar a {
+.navbar li a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #222222;
+  transition: color 0.25s ease;
+  padding: 8px 0;
+  display: inline-block;
+  user-select: none;
 }
 
-.navbar .active a,
-.navbar a:hover {
-  color: #007bff;
+.navbar li a:hover,
+.navbar li.active a {
+  color: #004a99; /* corporate blue accent */
+  border-bottom: 2.5px solid #004a99;
+}
+
+/* Responsive Hamburger Menu for Mobile */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar ul.open {
+    max-height: 200px; /* enough height for 2 menu items */
+  }
+
+  .navbar li {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Hamburger button */
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 110;
+  }
+
+  .navbar-toggle span,
+  .navbar-toggle span::before,
+  .navbar-toggle span::after {
+    display: block;
+    background-color: #222;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-toggle span::before,
+  .navbar-toggle span::after {
+    content: "";
+    position: absolute;
+  }
+
+  .navbar-toggle span::before {
+    top: -8px;
+  }
+
+  .navbar-toggle span::after {
+    top: 8px;
+  }
+
+  /* When open, transform hamburger to X */
+  .navbar-toggle.open span {
+    background-color: transparent;
+  }
+
+  .navbar-toggle.open span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+.nav-icon {
+  vertical-align: middle;
+  margin-right: 8px;
+  font-size: 1.2rem;
+  color: #004a99; /* match active color */
+  transition: color 0.25s ease;
+}
+
+/* Change icon color on active or hover */
+.navbar li.active .nav-icon,
+.navbar li a:hover .nav-icon {
+  color: #002766; /* darker blue */
 }
