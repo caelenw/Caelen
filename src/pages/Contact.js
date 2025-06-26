@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaEnvelope, FaFileDownload, FaPhone } from "react-icons/fa"; // import icon
 import "./Contact.css";
 
 const Contact = () => {
@@ -43,6 +44,28 @@ const Contact = () => {
 
   return (
     <section className="contact-section">
+      <div>
+        {/* Resume Download Link with icon */}
+        <a
+          href="https://drive.google.com/file/d/1BtxC0rbq4eBiiy6g5vrPBk4dvGHQS9uZ/view?usp=sharing"
+          download="https://drive.google.com/file/d/1BtxC0rbq4eBiiy6g5vrPBk4dvGHQS9uZ/view?usp=sharing"
+          className="resume-download-link"
+        >
+          <FaFileDownload className="resume-icon" />
+          Download My Resume
+        </a>
+      </div>
+       {/* Contact Info */}
+        <div className="contact-info">
+          <p>
+            <FaEnvelope className="contact-icon" />
+            <a href="mailto:Caelen.sw@gmail.com">Caelen.sw@gmail.com</a>
+          </p>
+          <p>
+            <FaPhone className="contact-icon" />
+            <a href="tel:+18642017060">(864) 201-7060</a>
+          </p>
+        </div>
       <div className="contact-intro">
         <h2 className="contact-title">Get in Touch</h2>
         <p className="contact-description">
