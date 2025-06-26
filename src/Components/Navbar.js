@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaFolderOpen, FaUser } from 'react-icons/fa'; // user & projects folder icons
+import { FaEnvelope, FaFolderOpen, FaUser } from 'react-icons/fa'; // added FaEnvelope for Contact
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
@@ -34,6 +34,12 @@ const Navbar = () => {
           <Link to="/projects" onClick={() => setMenuOpen(false)}>
             <FaFolderOpen className="nav-icon" />
             Projects
+          </Link>
+        </li>
+        <li className={location.pathname === '/contact' ? 'active' : ''}>
+          <Link to="/Contact" onClick={() => setMenuOpen(false)}>
+            <FaEnvelope className="nav-icon" />
+            Contact
           </Link>
         </li>
       </ul>
