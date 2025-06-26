@@ -9,7 +9,7 @@ const Contact = () => {
 
     const formData = new FormData(e.target);
     const formObject = Object.fromEntries(formData);
-    formObject.subject = "Contact from BudgetWithin Website";
+    formObject.subject = "Portolio Email Website";
     formObject.from_name = "My Website";
 
     const json = JSON.stringify(formObject);
@@ -46,7 +46,7 @@ const Contact = () => {
       <div className="contact-intro">
         <h2 className="contact-title">Get in Touch</h2>
         <p className="contact-description">
-          Fill out the form below and we'll get back to you as soon as possible.
+         Please fill In the form and I will get back to you as soon as possible.
         </p>
       </div>
 
