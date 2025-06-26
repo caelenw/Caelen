@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Caelen/static/css/main.287d05dc.css",
-    "main.js": "/Caelen/static/js/main.856c8216.js",
+    "main.css": "/Caelen/static/css/main.a052103e.css",
+    "main.js": "/Caelen/static/js/main.d05dac30.js",
     "static/js/453.da387032.chunk.js": "/Caelen/static/js/453.da387032.chunk.js",
     "static/media/ProfilePic.jpeg": "/Caelen/static/media/ProfilePic.621ae0205dff1f6157ff.jpeg",
     "index.html": "/Caelen/index.html",
-    "main.287d05dc.css.map": "/Caelen/static/css/main.287d05dc.css.map",
-    "main.856c8216.js.map": "/Caelen/static/js/main.856c8216.js.map",
+    "main.a052103e.css.map": "/Caelen/static/css/main.a052103e.css.map",
+    "main.d05dac30.js.map": "/Caelen/static/js/main.d05dac30.js.map",
     "453.da387032.chunk.js.map": "/Caelen/static/js/453.da387032.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.287d05dc.css",
-    "static/js/main.856c8216.js"
+    "static/css/main.a052103e.css",
+    "static/js/main.d05dac30.js"
   ]
 }
