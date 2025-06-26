@@ -1,15 +1,15 @@
 import styles from './AboutMe.module.css';
-
+import picture from './ProfilePic.jpeg';
 const AboutMe = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.header}>About Me</h2>
 
-      <div className={styles.introWrapper}>
+   <div className={styles.introWrapper}>
         <img
-          src="https://media.licdn.com/dms/image/v2/D4E03AQFUJGhb5jU2qg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1672369703266?e=1756339200&v=beta&t=jBhdlrK1IriWLC-IZWe2E-j91D7HTXHF62wtmy46QhA"
+          src={picture}
           alt="Caelen Wall"
-          className={styles.photo}
+          className={styles.photo}  // if you want to style it
         />
         <p className={styles.introText}>
           I'm Caelen Wall, a recent graduate from the University of South Carolina with a Bachelor of Science in Computer Information Systems and a minor in Business Information Management. I’m passionate about using technology to solve practical problems and create meaningful digital experiences. My focus lies in combining business understanding with technical skill to improve systems, workflows, and user outcomes.

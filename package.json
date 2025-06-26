@@ -2,7 +2,7 @@
   "name": "caelen",
   "version": "0.1.0",
   "private": true,
-    "homepage": "https://caelenw.github.io/caelen",
+"homepage": "https://caelenw.github.io/Caelen",
 
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -18,7 +18,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "homepage": "https://caelenw.github.io/caelen",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
